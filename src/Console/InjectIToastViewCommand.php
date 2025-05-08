@@ -26,7 +26,7 @@ class InjectIToastViewCommand extends Command
             @endif
         BLADE;
 
-        if (strpos($contents, '@include(\'vendor.itoast\')') !== false) {
+        if (strpos($contents, '@include(\'vendor.itoast.itoasts\')') !== false) {
             $this->info("Snippet already exists.");
             return;
         }

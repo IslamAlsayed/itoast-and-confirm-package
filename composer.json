@@ -29,7 +29,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Islam\\Itoast\\": "src/"
+      "IslamAlsayed\\Itoast\\": "src/"
     },
     "files": [
       "src/Helpers.php"
@@ -38,13 +38,16 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Islam\\Itoast\\IToastServiceProvider"
+        "IslamAlsayed\\Itoast\\IToastServiceProvider"
       ],
       "aliases": {
-        "IToast": "Islam\\Itoast\\Facades\\IToastFacade"
+        "IToast": "IslamAlsayed\\Itoast\\Facades\\IToastFacade"
       }
     }
   },
   "minimum-stability": "stable",
-  "prefer-stable": true
+  "prefer-stable": true,
+  "support": {
+    "source": "https://github.com/IslamAlsayed/itoast-and-confirm-package"
+  }
 }

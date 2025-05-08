@@ -134,7 +134,6 @@
     </div>
 @endif
 
-
 <script>
     configItoast = @json(config('itoast'));
 </script>
