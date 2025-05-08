@@ -1,5 +1,5 @@
 {
-    "name": "islam/itoast",
+    "name": "islam.sh/itoast",
     "description": "Flexible and animated toast notification system for Laravel",
     "type": "library",
     "license": "MIT",

@@ -1,39 +1,40 @@
 ## Laravel iToast and Confirm Component
 
-#### يمكتك استخدام حزمة بسطة واحترافية لعرض الاشعارات
+#### A simple and professional package for displaying beautiful toast notifications and confirmation alerts in your Laravel app.
 
-## ✅ المميزات
+## [demo for test](https://islamalsayed.github.io/itoast-and-confirm-package/)
 
-دعم متعدد لأنواع التنبيهات: ✅ نجاح، ❌ خطأ، ⚠️ تحذير، ℹ️ معلومات
+## ✅ Features
 
-- دعم متعدد لأنواع التنبيهات (success, error, info, warn)
-- دعم الأيقونات والإيموجي
-- دعم العناوين والنصوص
-- إمكانية التثبيت (Pin)
-- تخصيص المدة الزمنية للعرض
-- تحديد موضع الظهور (مثل: أعلى، يمين)
-- دعم الاتجاهات: ltr و rtl
-- دعم السمات (Themes): success, error, info, warn
-- إمكانية عرض أزرار: (Confirm / Cancel) => (Yes / No)
-- دعم إجراءات إضافية قابلة للتخصيص
+Multiple notification types: ✅ Success, ❌ Error, ⚠️ Warning, ℹ️ Info
 
-## التثبيت
+- Supports icons and emojis
+- Custom titles and messages
+- Pin option (persistent toasts)
+- Custom display durations
+- Position control (e.g., top, right)
+- Direction support: LTR and RTL
+- Themes for all toast types
+- Confirm/Cancel buttons
+- Extra customizable actions
 
-### 1. تثبيت الباكيج عبر Composer:
+## Installation
+
+1. Install the package via Composer:
 
 ```php
 composer require islam.sh/itoast
 ```
 
-#### 2. نشر جميع الملفات:
+#### 2. Publish assets:
 
 ```php
 php artisan vendor:publish --tag=itoast-all
 ```
 
-### الاستخدام
+### Usage
 
-يمكنك تشغيل `confirm` باستخدام أي من الطرق التالية:
+You can run `confirm` using any of the following methods:
 
 ### Confirms (إشعار تأكيد)
 
@@ -72,9 +73,9 @@ or
 
 ### Confirms
 
-![Confirms](./src/Resources/assets/images/confirms.png)
+![Confirms](./assets/images/confirms.png)
 
-يمكنك تشغيل `itoast` او باستخدام أي من الطرق التالية:
+You can run `itoast` using any of the following methods:
 
 ### Itoasts (إشعار لحظي)
 
@@ -89,7 +90,7 @@ IToast::success('Data updated')->icon('check-circle')->duration('0.9s')->withAct
 
 ### Success (إشعار نجاح)
 
-![Success](./src/Resources/assets/images/success.png)
+![Success](./assets/images/success.png)
 
 #### ✅ 3. Using the `IToast` static class
 
@@ -102,7 +103,7 @@ IToast::error('Server error')->icon('bomb')->duration('0.9s')->withAction('Retry
 
 ### Error (إشعار خطأ)
 
-![Error](./src/Resources/assets/images/error.png)
+![Error](./assets/images/error.png)
 
 #### ✅ 4. Using the `IToast` static class
 
@@ -115,7 +116,7 @@ IToast::warn('Check your input')->icon('skull-crossbones')->duration('0.9s')->wi
 
 ### Warn (إشعار تحذير)
 
-![Warn](./src/Resources/assets/images/warn.png)
+![Warn](./assets/images/warn.png)
 
 #### ✅ 5. Using the `IToast` static class
 
@@ -128,7 +129,7 @@ IToast::info('View release notes')->icon('stethoscope')->duration('1.5s')->withA
 
 ### Info (إشعار معلومات)
 
-![Info](./src/Resources/assets/images/info.png)
+![Info](./assets/images/info.png)
 
 #### ✅ 6. Using Laravel session (flash)
 
@@ -142,7 +143,7 @@ session()->flash('success', [
     'duration' => '2m',
     'position' => 'right',
     'pin' => 'pin',
-    'actions' => [['label' => 'تفاصيل', 'url' => '/details'], ['label' => 'تراجع', 'url' => '/oops']],
+    'actions' => [['label' => 'details', 'url' => '/details'], ['label' => 'undo', 'url' => '/oops']],
 ]);
 ```
 
@@ -156,31 +157,31 @@ return redirect()->route('profile')->with('warn', 'Please fill out all fields');
 return redirect()->route('home')->with('info', 'View release notes');
 ```
 
-### يمكنك استخدام الحزمة مع اللغة العربية ايضا
+### This package also fully supports Arabic notifications and RTL layout.
 
 ### Confirms (إشعار تأكيد)
 
-![Confirms](./src/Resources/assets/images/confirms_ar.png)
+![Confirms](./assets/images/confirms_ar.png)
 
 ### Success (إشعار نجاح)
 
-![Success](./src/Resources/assets/images/success_ar.png)
+![Success](./assets/images/success_ar.png)
 
 ### Error (إشعار خطأ)
 
-![Error](./src/Resources/assets/images/error_ar.png)
+![Error](./assets/images/error_ar.png)
 
 ### Warn (إشعار تحذير)
 
-![Warn](./src/Resources/assets/images/warn_ar.png)
+![Warn](./assets/images/warn_ar.png)
 
 ### Info (إشعار معلومات)
 
-![Info](./src/Resources/assets/images/info_ar.png)
+![Info](./assets/images/info_ar.png)
 
-يمكنك أيضًا ربط الخيارات الإضافية:
+You can also link additional options:
 
-### الخصائص
+### Properties
 
 ```php
 public $type;
@@ -198,48 +199,48 @@ public $cancel = null;
 public $actions = [];
 ```
 
-| الخاصية  | النوع  | الوصف                                                 |                                           |
-| :------- | :----- | :---------------------------------------------------- | :---------------------------------------- |
-| type     | string | some are require                                      | (فقط): success, error, info, warn         |
-| message  | string | message text                                          | نص رسالة الأشعار                          |
-| title    | string | null                                                  | (اختياري) نص عنوان الأشعار                |
-| emoji    | string | null                                                  | (فقط): إموجي جنب العنوان => emoji         |
-| icon     | string | null                                                  | icon من FontAwesome مثلا او emoji         |
-| duration | int    | null                                                  | مدة العرض بالمللي ثانية والثواني والدقائق |
-| position | string | null                                                  | (فقط): موقع الدخول => top or right        |
-| pin      | bool   | null                                                  | تثبيت وعدم الاختفاء التلقائي              |
-| theme    | string | null                                                  | (فقط): success, error, info, warn         |
-| dir      | string | null                                                  | (فقط): اتجاه الاشعار والنصوص => rtl, ltr  |
-| confirm  | string | null                                                  | (Yes) نص زرار الموافقة                    |
-| cancel   | string | null                                                  | (No) نص زرار الإلغاء                      |
-| actions  | array  | [['label' => 'تفاصيل' 'url' => '/details-url'], ... ] | إضافة إجراءات إضافية في الإشعار           |
+| Property | Type   | Description                                            |                                                  |
+| :------- | :----- | :----------------------------------------------------- | :----------------------------------------------- |
+| type     | string | some are require                                       | success, error, info, warn                       |
+| message  | string | message text                                           | itoast message                                   |
+| title    | string | null                                                   | (Optional) title                                 |
+| emoji    | string | null                                                   | Emoji to show next to the title                  |
+| icon     | string | null                                                   | Icon name (FontAwesome or emoji)                 |
+| duration | int    | null                                                   | Duration (ms/s/m/h)                              |
+| position | string | null                                                   | Display position: top, right                     |
+| pin      | bool   | null                                                   | If true, toast won't auto-hide                   |
+| theme    | string | null                                                   | success, error, info, warn                       |
+| dir      | string | null                                                   | Text direction: ltr or rtl                       |
+| confirm  | string | null                                                   | Confirm button label (Yes)                       |
+| cancel   | string | null                                                   | Cancel button label (No)                         |
+| actions  | array  | [['label' => 'details' 'url' => '/details-url'], ... ] | Array of actions: ['label' => ..., 'url' => ...] |
 
 ---
 
-## اقتراحات مستقبلية
+## 💡 Future Suggestions
 
-- دعم Queue للتنبيهات المتعددة بالتتابع
-- دعم صوت للتنبيه
-- تخزين التنبيهات في الجلسة أو الكوكيز للعرض بعد إعادة التوجيه
-- تضمين Animation جاهزة مثل fadeIn, slideOut وغيرها
-
----
-
-## ➖ 🛠️ المساهمة في المشروع
-
-هل لديك أفكار أو تحسينات؟ نرحب بمساهماتك!
-
-- افتح Issue.
-- أو قدم Pull Request.
+- Support for queueing multiple toasts in sequence
+- Audio alert support
+- Persist toast in session or cookies after redirect
+- Built-in animations like fadeIn, slideOut, etc.
 
 ---
 
-## ➖ 📬 تواصل معي
+## ➖ 🛠️Contributing
 
-- 📧 **الإيميل**: [eslamalsayed8133@gmail.com](mailto:eslamalsayed8133@gmail.com)
-- 💼 **لينكدإن**: [IslamAlsayed](https://www.linkedin.com/in/islam-alsayed7)
-- 💼 **فيسبوك**: [IslamAlsayed](https://www.facebook.com/islamalsayed00)
+Have an idea or improvement? Contributions are welcome!
+
+- Open an issue
+- Or submit a pull request
 
 ---
 
-> ✨ تم تطوير هذا المشروع لتسهيل عرض اشعار للمستخدم بشكل سهل وبسيط ومميز
+## ➖ 📬 Contact Me
+
+- 📧 **Email**: [eslamalsayed8133@gmail.com](mailto:eslamalsayed8133@gmail.com)
+- 💼 **LinkedIn**: [IslamAlsayed](https://www.linkedin.com/in/islam-alsayed7)
+- 💼 **Facebook**: [IslamAlsayed](https://www.facebook.com/islamalsayed00)
+
+---
+
+> ✨ ✨ Developed to simplify user notifications in a clean and flexible way.
