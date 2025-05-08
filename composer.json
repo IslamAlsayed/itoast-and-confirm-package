@@ -24,7 +24,7 @@
   },
   "archive": {
     "exclude": [
-      "/demo"
+      "demo"
     ]
   },
   "autoload": {
@@ -45,6 +45,6 @@
       }
     }
   },
-  "minimum-stability": "dev",
+  "minimum-stability": "stable",
   "prefer-stable": true
 }
