@@ -71,13 +71,13 @@ or
 (new IToastManager)->add('confirm', 'Block user?')->theme('info');
 ```
 
-### Confirms
-
 You can run `itoast` using any of the following methods:
 
 ### Itoasts (إشعار لحظي)
 
 #### ✅ 2. Using the `IToast` static class
+
+Success (إشعار نجاح)
 
 ```php
 addItoastSuccess('Operation completed successfully')->duration('2s');
@@ -86,9 +86,9 @@ addIToast('success', 'Saved successfully')->duration(5000);
 IToast::success('Data updated')->icon('check-circle')->duration('0.9s')->withAction('Undo', '/undo-url');
 ```
 
-### Success (إشعار نجاح)
-
 #### ✅ 3. Using the `IToast` static class
+
+Error (إشعار خطأ)
 
 ```php
 addItoastError('Something went wrong')->icon('bug')->duration('2s');
@@ -97,9 +97,9 @@ addIToast('error', 'Saved not successfully')->pin();
 IToast::error('Server error')->icon('bomb')->duration('0.9s')->withAction('Retry', '/retry');
 ```
 
-### Error (إشعار خطأ)
-
 #### ✅ 4. Using the `IToast` static class
+
+Warn (إشعار تحذير)
 
 ```php
 addItoastWarn('Please fill out all fields')->icon('car-on')->duration('2s');
@@ -108,9 +108,9 @@ addIToast('warn', 'Saved not successfully')->pin()->icon('radiation');
 IToast::warn('Check your input')->icon('skull-crossbones')->duration('0.9s')->withAction('Fix', '/fix-form');
 ```
 
-### Warn (إشعار تحذير)
-
 #### ✅ 5. Using the `IToast` static class
+
+Info (إشعار معلومات)
 
 ```php
 addItoastInfo('System will restart at 10 PM')->icon('sitemap')->duration('3s');
@@ -118,8 +118,6 @@ addIToast('info', 'New update available')->pin()->icon('infinity');
 (new IToastManager)->add('info', 'Unsaved changes')->emoji('🔔')->title('info');
 IToast::info('View release notes')->icon('stethoscope')->duration('1.5s')->withAction('Dismiss', '/dismiss');
 ```
-
-### Info (إشعار معلومات)
 
 #### ✅ 6. Using Laravel session (flash)
 
