@@ -23,7 +23,7 @@ Multiple notification types: ✅ Success, ❌ Error, ⚠️ Warning, ℹ️ Info
 1. Install the package via Composer:
 
 ```php
-composer require islam.sh/itoast
+composer require islamalsayed/itoast
 ```
 
 #### 2. Publish assets:
