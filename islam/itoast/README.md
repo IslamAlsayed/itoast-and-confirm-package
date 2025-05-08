@@ -1,4 +1,4 @@
-## Laravel iToast and Confirm Component
+## Laravel Flash Notification Component
 
 #### يمكتك استخدام حزمة بسطة واحترافية لعرض الاشعارات
 
@@ -22,10 +22,28 @@
 ### 1. تثبيت الباكيج عبر Composer:
 
 ```php
-composer require islam.sh/itoast
+composer require islam/itoast
 ```
 
-#### 2. نشر جميع الملفات:
+#### 2. نشر ملفات الإعدادات (Config):
+
+```php
+php artisan vendor:publish --tag=itoast-config
+```
+
+#### 3. نشر ملفات الموارد (Assets):
+
+```php
+php artisan vendor:publish --tag=itoast-assets
+```
+
+#### 4. نشر ملفات الواجهات (Views):
+
+```php
+php artisan vendor:publish --tag=itoast-views
+```
+
+### أو استخدم أمر واحد لنشر كل شيء دفعة واحدة:
 
 ```php
 php artisan vendor:publish --tag=itoast-all
