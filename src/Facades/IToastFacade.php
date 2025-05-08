@@ -2,7 +2,7 @@
 
 namespace IslamAlsayed\Itoast\Facades;
 
-use App\Helpers\IslamAlsayed\IToast\src\IToastFactory;
+use IslamAlsayed\Itoast\IToastFactory;
 use Illuminate\Support\Facades\Facade;
 
 class IToastFacade extends Facade

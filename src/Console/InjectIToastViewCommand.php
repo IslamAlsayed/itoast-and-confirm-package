@@ -1,6 +1,6 @@
 <?php
 
-namespace Islam\Itoast\Console;
+namespace IslamAlsayed\Itoast\Console;
 
 use Illuminate\Console\Command;
 

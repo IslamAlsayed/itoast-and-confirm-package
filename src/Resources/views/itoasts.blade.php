@@ -139,4 +139,4 @@
     configItoast = @json(config('itoast'));
 </script>
 
-<script type="module" src="{{ asset('assets/js/itoast.js') }}"></script>
+<script type="module" src="{{ asset('vendor/itoast/js/itoast.js') }}"></script>
