@@ -11,10 +11,11 @@ class IToastServiceProvider extends ServiceProvider
         $this->loadViewsFrom(__DIR__ . '/../Resources/views', 'itoast');
 
         $this->publishes([
-            __DIR__ . '/../Resources/css' => public_path('vendor/itoast/css'),
-            __DIR__ . '/../Resources/js' => public_path('vendor/itoast/js'),
-            __DIR__ . '/../Resources/views' => resource_path('views/vendor/itoast'),
-            __DIR__ . '/../Config/itoast.php' => config_path('itoast.php'),
+            __DIR__ . '/Resources/assets/css' => public_path('vendor/itoast/css'),
+            __DIR__ . '/Resources/assets/js' => public_path('vendor/itoast/js'),
+            __DIR__ . '/Resources/views' => resource_path('views/vendor/itoast'),
+            __DIR__ . '/Config/itoast.php' => config_path('itoast.php'),
+            __DIR__ . '/Resources/assets/webfonts' => public_path('vendor/itoast/webfonts'),
         ], 'itoast-all');
     }
 
