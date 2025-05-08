@@ -25,25 +25,7 @@
 composer require islam/itoast
 ```
 
-#### 2. نشر ملفات الإعدادات (Config):
-
-```php
-php artisan vendor:publish --tag=itoast-config
-```
-
-#### 3. نشر ملفات الموارد (Assets):
-
-```php
-php artisan vendor:publish --tag=itoast-assets
-```
-
-#### 4. نشر ملفات الواجهات (Views):
-
-```php
-php artisan vendor:publish --tag=itoast-views
-```
-
-### أو استخدم أمر واحد لنشر كل شيء دفعة واحدة:
+#### 2. نشر جميع الملفات:
 
 ```php
 php artisan vendor:publish --tag=itoast-all
