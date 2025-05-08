@@ -1,4 +1,4 @@
-## Laravel Flash Notification Component
+## Laravel iToast and Confirm Component
 
 #### يمكتك استخدام حزمة بسطة واحترافية لعرض الاشعارات
 
@@ -25,7 +25,7 @@
 composer require islam/itoast
 ```
 
-#### 2. نشر جميع الملفات:
+#### 2. نشر جميع ملفات:
 
 ```php
 php artisan vendor:publish --tag=itoast-all
@@ -72,7 +72,7 @@ or
 
 ### Confirms
 
-![Confirms](./src/Resources/assets/images/confirms.png)
+![Confirms](./assets/images/confirms.png)
 
 يمكنك تشغيل `itoast` او باستخدام أي من الطرق التالية:
 
@@ -89,7 +89,7 @@ IToast::success('Data updated')->icon('check-circle')->duration('0.9s')->withAct
 
 ### Success (إشعار نجاح)
 
-![Success](./src/Resources/assets/images/success.png)
+![Success](./assets/images/success.png)
 
 #### ✅ 3. Using the `IToast` static class
 
@@ -102,7 +102,7 @@ IToast::error('Server error')->icon('bomb')->duration('0.9s')->withAction('Retry
 
 ### Error (إشعار خطأ)
 
-![Error](./src/Resources/assets/images/error.png)
+![Error](./assets/images/error.png)
 
 #### ✅ 4. Using the `IToast` static class
 
@@ -115,7 +115,7 @@ IToast::warn('Check your input')->icon('skull-crossbones')->duration('0.9s')->wi
 
 ### Warn (إشعار تحذير)
 
-![Warn](./src/Resources/assets/images/warn.png)
+![Warn](./assets/images/warn.png)
 
 #### ✅ 5. Using the `IToast` static class
 
@@ -128,7 +128,7 @@ IToast::info('View release notes')->icon('stethoscope')->duration('1.5s')->withA
 
 ### Info (إشعار معلومات)
 
-![Info](./src/Resources/assets/images/info.png)
+![Info](./assets/images/info.png)
 
 #### ✅ 6. Using Laravel session (flash)
 
@@ -160,23 +160,23 @@ return redirect()->route('home')->with('info', 'View release notes');
 
 ### Confirms (إشعار تأكيد)
 
-![Confirms](./src/Resources/assets/images/confirms_ar.png)
+![Confirms](./assets/images/confirms_ar.png)
 
 ### Success (إشعار نجاح)
 
-![Success](./src/Resources/assets/images/success_ar.png)
+![Success](./assets/images/success_ar.png)
 
 ### Error (إشعار خطأ)
 
-![Error](./src/Resources/assets/images/error_ar.png)
+![Error](./assets/images/error_ar.png)
 
 ### Warn (إشعار تحذير)
 
-![Warn](./src/Resources/assets/images/warn_ar.png)
+![Warn](./assets/images/warn_ar.png)
 
 ### Info (إشعار معلومات)
 
-![Info](./src/Resources/assets/images/info_ar.png)
+![Info](./assets/images/info_ar.png)
 
 يمكنك أيضًا ربط الخيارات الإضافية:
 
