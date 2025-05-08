@@ -73,8 +73,6 @@ or
 
 ### Confirms
 
-![Confirms](./assets/images/confirms.png)
-
 You can run `itoast` using any of the following methods:
 
 ### Itoasts (إشعار لحظي)
@@ -90,8 +88,6 @@ IToast::success('Data updated')->icon('check-circle')->duration('0.9s')->withAct
 
 ### Success (إشعار نجاح)
 
-![Success](./assets/images/success.png)
-
 #### ✅ 3. Using the `IToast` static class
 
 ```php
@@ -102,8 +98,6 @@ IToast::error('Server error')->icon('bomb')->duration('0.9s')->withAction('Retry
 ```
 
 ### Error (إشعار خطأ)
-
-![Error](./assets/images/error.png)
 
 #### ✅ 4. Using the `IToast` static class
 
@@ -116,8 +110,6 @@ IToast::warn('Check your input')->icon('skull-crossbones')->duration('0.9s')->wi
 
 ### Warn (إشعار تحذير)
 
-![Warn](./assets/images/warn.png)
-
 #### ✅ 5. Using the `IToast` static class
 
 ```php
@@ -128,8 +120,6 @@ IToast::info('View release notes')->icon('stethoscope')->duration('1.5s')->withA
 ```
 
 ### Info (إشعار معلومات)
-
-![Info](./assets/images/info.png)
 
 #### ✅ 6. Using Laravel session (flash)
 
@@ -158,26 +148,6 @@ return redirect()->route('home')->with('info', 'View release notes');
 ```
 
 ### This package also fully supports Arabic notifications and RTL layout.
-
-### Confirms (إشعار تأكيد)
-
-![Confirms](./assets/images/confirms_ar.png)
-
-### Success (إشعار نجاح)
-
-![Success](./assets/images/success_ar.png)
-
-### Error (إشعار خطأ)
-
-![Error](./assets/images/error_ar.png)
-
-### Warn (إشعار تحذير)
-
-![Warn](./assets/images/warn_ar.png)
-
-### Info (إشعار معلومات)
-
-![Info](./assets/images/info_ar.png)
 
 You can also link additional options:
 
