@@ -1,6 +1,6 @@
 <?php
 
-namespace Islam\Itoast;
+namespace IslamAlsayed\Itoast;
 
 class IToastManager
 {

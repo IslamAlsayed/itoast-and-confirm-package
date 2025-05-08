@@ -1,6 +1,6 @@
 <?php
 
-namespace Islam\Itoast;
+namespace IslamAlsayed\Itoast;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -24,6 +24,10 @@ class IToastServiceProvider extends ServiceProvider
         $this->app->singleton('itoast', function () {
             return new IToastManager();
         });
+
+        $this->commands([
+            \IslamAlsayed\Itoast\Console\InjectIToastViewCommand::class,
+        ]);
 
         require_once __DIR__ . '/Helpers.php';
     }

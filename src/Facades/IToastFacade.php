@@ -1,8 +1,8 @@
 <?php
 
-namespace Islam\Itoast\Facades;
+namespace IslamAlsayed\Itoast\Facades;
 
-use App\Helpers\Islam\IToast\src\IToastFactory;
+use App\Helpers\IslamAlsayed\IToast\src\IToastFactory;
 use Illuminate\Support\Facades\Facade;
 
 class IToastFacade extends Facade
