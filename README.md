@@ -2,21 +2,23 @@
 
 #### A simple and professional package for displaying beautiful toast notifications and confirmation alerts in your Laravel app.
 
-## [demo for test](https://islamalsayed.github.io/test-itoast-package)
+demo
+
+## [demo](https://islamalsayed.github.io/test-itoast-package)
 
 ## ✅ Features
 
 Multiple notification types: ✅ Success, ❌ Error, ⚠️ Warning, ℹ️ Info
 
--   Supports icons and emojis
--   Custom titles and messages
--   Pin option (persistent toasts)
--   Custom display durations
--   Position control (e.g., top, right)
--   Direction support: LTR and RTL
--   Themes for all toast types
--   Confirm/Cancel buttons
--   Extra customizable actions
+- Supports icons and emojis
+- Custom titles and messages
+- Pin option (persistent toasts)
+- Custom display durations
+- Position control (e.g., top, right)
+- Direction support: LTR and RTL
+- Themes for all toast types
+- Confirm/Cancel buttons
+- Extra customizable actions
 
 ## Installation
 
@@ -193,10 +195,10 @@ public $actions = [];
 
 ## 💡 Future Suggestions
 
--   Support for queueing multiple toasts in sequence
--   Audio alert support
--   Persist toast in session or cookies after redirect
--   Built-in animations like fadeIn, slideOut, etc.
+- Support for queueing multiple toasts in sequence
+- Audio alert support
+- Persist toast in session or cookies after redirect
+- Built-in animations like fadeIn, slideOut, etc.
 
 ---
 
@@ -204,16 +206,16 @@ public $actions = [];
 
 Have an idea or improvement? Contributions are welcome!
 
--   Open an issue
--   Or submit a pull request
+- Open an issue
+- Or submit a pull request
 
 ---
 
 ## ➖ 📬 Contact Me
 
--   📧 **Email**: [eslamalsayed8133@gmail.com](mailto:eslamalsayed8133@gmail.com)
--   💼 **LinkedIn**: [IslamAlsayed](https://www.linkedin.com/in/islam-alsayed7)
--   💼 **Facebook**: [IslamAlsayed](https://www.facebook.com/islamalsayed00)
+- 📧 **Email**: [eslamalsayed8133@gmail.com](mailto:eslamalsayed8133@gmail.com)
+- 💼 **LinkedIn**: [IslamAlsayed](https://www.linkedin.com/in/islam-alsayed7)
+- 💼 **Facebook**: [IslamAlsayed](https://www.facebook.com/islamalsayed00)
 
 ---
 
