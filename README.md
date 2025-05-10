@@ -1,10 +1,10 @@
-## Laravel iToast and Confirm Component
+## Laravel iToast and Confirm
 
 #### A simple and professional package for displaying beautiful toast notifications and confirmation alerts in your Laravel app.
 
-demo
+demo test
 
-## [demo](https://islamalsayed.github.io/test-itoast-package)
+## [demo test](https://islamalsayed.github.io/test-itoast-package)
 
 ## ✅ Features
 
