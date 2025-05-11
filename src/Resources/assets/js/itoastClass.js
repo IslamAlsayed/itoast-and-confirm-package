@@ -24,10 +24,7 @@ export const Itoast = {
     },
 
     resetTimes() {
-        this.root.style.setProperty(
-            "--itoast-move",
-            configItoast.move || "enable"
-        );
+        this.root.style.setProperty("--itoast-move", configItoast.move || "enable");
         this.root.style.setProperty(
             "--itoast-enter-time",
             configItoast.enter_time || "0.3s"
@@ -47,9 +44,7 @@ export const Itoast = {
     },
 
     setTimes(itoast) {
-        const baseVisibleTime = this.parseTime(
-            configItoast.visible_time || "7s"
-        );
+        const baseVisibleTime = this.parseTime(configItoast.visible_time || "7s");
         const enterTime = this.parseTime(configItoast.enter_time || "0.3s");
         const exitTime = this.parseTime(configItoast.exit_time || "0.3s");
         const startDelayTime = this.parseTime(
@@ -302,9 +297,7 @@ export const Itoast = {
         const a = document.createElement("a");
         a.classList.add("itoast-action", "onconfirm");
         a.href = _confirm.onconfirmLink;
-        a.classList.add(
-            this.isEmoji(_confirm.onconfirmText) ? "emoji" : "text"
-        );
+        a.classList.add(this.isEmoji(_confirm.onconfirmText) ? "emoji" : "text");
         a.textContent = _confirm.onconfirmText;
 
         const p = document.createElement("p");
@@ -403,12 +396,7 @@ export const Itoast = {
         }
 
         itoast.appendChild(
-            this._createText(
-                options.title,
-                options.message,
-                __actions,
-                __confirm
-            )
+            this._createText(options.title, options.message, __actions, __confirm)
         );
         itoast.appendChild(this._createCloseButton(itoast));
 
